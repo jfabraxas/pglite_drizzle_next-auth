@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
-import { auth } from '@/auth';
+//import { auth } from '@/auth';
 
+/*
 export default auth((req) => {
   // Protected routes
   const protectedRoutes = ['/dashboard', '/profile'];
@@ -13,6 +14,11 @@ export default auth((req) => {
 
   return NextResponse.next();
 });
+*/
+
+export default async function middleware(){
+  return NextResponse.next();
+}
 
 export const config = {
   matcher: ['/dashboard/:path*', '/profile/:path*', '/api/auth/:path*'],

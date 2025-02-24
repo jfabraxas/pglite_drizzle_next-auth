@@ -11,10 +11,10 @@ export default async function DashboardPage() {
   return (
     <div>
       <h1>Dashboard</h1>
-      <p>Welcome, {session.user.name}</p>
+      <p>Welcome, {session?.user?.name}</p>
       <img
-        src={session.user.image || '/default-avatar.png'}
-        alt={session.user.name || 'User Avatar'}
+        src={session?.user?.image || '/default-avatar.png'}
+        alt={session?.user?.name || 'User Avatar'}
         width={100}
         height={100}
       />

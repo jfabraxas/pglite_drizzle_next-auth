@@ -13,6 +13,7 @@
   "dependencies": {
     "@auth/drizzle-adapter": "^1.7.4",
     "@electric-sql/pglite": "^0.2.17",
+    "@simplewebauthn/server": "^9",
     "@types/node": "20.6.2",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
