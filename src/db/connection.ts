@@ -8,7 +8,7 @@ let client: PGlite;
 
 export async function getDatabase() {
   if (!db) {
-    client = new PGlite('file:mydb');
+    client = new PGlite('file:.db');
 
     // Simplified schema creation
     await createTables(client);
